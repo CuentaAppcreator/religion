@@ -30,7 +30,7 @@
 </head>
 <body class="relative min-h-screen bg-black text-white overflow-x-hidden">
 
-  <!-- Fondo -->
+  
   <div class="absolute inset-0 z-0 h-[60vh] md:h-[70vh]">
     <img
       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_lze9VKey9fQvXkEqph5JfjL0DQqagTneR-dms6FRDnSRdAOOveZvy-uhSrtJzOccjxTu_KCR2Vr-SFDZfPnbjyqdgLbOWyHCCi-PJy0rkI4fTPIVfdhDxLMV-W7dowBXgAQJiN6gyXLfeWlupOld7jkM97g0yvNJgLk4WJVGUH2QCVu1a2oBfBoexO2b/s640/new.jpeg"
@@ -41,10 +41,10 @@
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
   </div>
 
-  <!-- Contenido -->
+
   <div class="relative z-10">
 
-    <!-- Header -->
+    
     <header id="main-header" class="pt-3 pb-3 px-4 sm:pt-4 sm:pb-4 sm:px-6 flex items-center space-x-3 sm:space-x-4 text-white">
       <a href="javascript:window.history.back();" aria-label="Volver" class="text-white text-2xl sm:text-3xl flex-shrink-0">
         <i class="fas fa-chevron-left"></i>
@@ -58,7 +58,7 @@
 
       <div class="flex-1"></div>
 
-      <!-- Recomendadas aparece solo al hacer scroll -->
+   
       <button id="header-recomendadas" class="opacity-0 transition-opacity duration-300 border border-white rounded-full px-3 py-1 text-xs sm:text-sm flex items-center space-x-1 whitespace-nowrap">
         <i class="fas fa-random"></i> <span>Aleatorio</span>
       </button>
@@ -66,28 +66,27 @@
 
     <main class="px-4 sm:px-6 pb-6 pt-14 max-w-7xl mx-auto">
 
-  <!-- Título y botón aleatorio -->
+
   <div class="flex justify-between items-center mb-3">
-    <h1 id="main-title" class="text-3xl font-normal">__TITULO__</h1>
+    <h1 id="main-title" class="text-3xl font-normal">Religion</h1>
     <button id="btn-recomendadas" class="border border-white rounded-full px-3 py-1 text-sm flex items-center">
       <i class="fas fa-random"></i>
     </button>
   </div>
 
-      <!-- Descripción -->
+
       <p id="description" class="text-white text-base mb-4 max-w-xl leading-relaxed">
-        La religión nos invita a encontrar paz, amor y propósito en la vida.
-Es un puente entre lo humano y lo divino, que impulsa a cultivar valores como la compasión, la solidaridad y el respeto hacia los demás.
+        La religion nos invita a encontrar paz, amor y proposito en la vida.
+Es un puente entre lo humano y lo divino, que impulsa a cultivar valores como la compasion, la solidaridad y el respeto hacia los demas.
       </p>
 
-      <!-- Total -->
+    
       <div class="flex items-center justify-center text-white text-sm mb-4 space-x-3">
         <div class="border-b border-white w-16"></div>
         <span id="contenido-total" class="whitespace-nowrap">Contenido: 0</span>
         <div class="border-b border-white w-16"></div>
       </div>
 
-  <!-- Contenedor de carteles -->
   <div id="posters-grid" class="grid grid-cols-3 sm:grid-cols-[repeat(auto-fit,_minmax(140px,_1fr))] gap-3 mt-3">
     <!--PEGAR CONTENIDO AQUI ABAJO-->
 
@@ -150,7 +149,7 @@ Es un puente entre lo humano y lo divino, que impulsa a cultivar valores como la
 
     observer.observe(description);
 
-    // Función para mezclar elementos aleatoriamente
+   
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -169,7 +168,7 @@ Es un puente entre lo humano y lo divino, que impulsa a cultivar valores como la
     mainBtnRecomendadas.addEventListener('click', reorganizarPeliculas);
     headerBtnRecomendadas.addEventListener('click', reorganizarPeliculas);
 	
-// Mostrar el total de carteles
+
 const totalContenedor = document.getElementById('contenido-total');
 function actualizarTotalContenido() {
   const total = postersGrid.querySelectorAll('a').length;
